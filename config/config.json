@@ -1,18 +1,17 @@
 {
   "development": {
-    "username": "mkh8syo0k829qzmp",
-    "password": "vnw7pgifzc6m5oyd",
-    "database": "rdhib04s8h2z6e5c",
-    "host": "u0zbt18wwjva9e0v.cbetxkdyhwsb.us-east-1.rds.amazonaws.com	",
+    "username": "root",
+    "password": "",
+    "database": "choresdb",
+    "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
-    "username": "mkh8syo0k829qzmp",
-    "password": "vnw7pgifzc6m5oyd",
-    "database": "rdhib04s8h2z6e5c",
-    "host": "u0zbt18wwjva9e0v",
-    "dialect": "mysql",
-    "logging": false
+    "username": "root",
+    "password": "",
+    "database": "choresdb",
+    "host": "localhost",
+    "dialect": "mysql"
   },
   "production": {
     "use_env_variable": "JAWSDB_URL",
