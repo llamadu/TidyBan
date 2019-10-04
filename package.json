@@ -1,7 +1,7 @@
 {
-  "name": "node-handlebars-boilerplate",
+  "name": "TidyBan",
   "version": "1.0.0",
-  "description": "Project 2 Starter",
+  "description": "Chore Tracker",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
