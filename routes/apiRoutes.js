@@ -1,6 +1,31 @@
 var db = require("../models");
 
 module.exports = function(app) {
+  app.get('/api/helpers', function (req, res) {
+    // TODO: Use db.Helper.findAll() to add a task
+
+  });
+
+  // Add a new user  
+  app.post('/api/helper', function (req, res) {
+    // TODO: Use db.Helper.create() to add a helper
+
+
+  });
+
+  app.get('/api/tasks', function (req, res) {
+    // TODO: Use db.Tasks.findAll() to add a task
+
+  });
+
+  // Add a new user  
+  app.post('/api/task', function (req, res) {
+    // TODO: Use db.Task.create() to add a task
+
+  });
+
+
+
 // Retrieve all users 
 app.get('/users', function (req, res) {
   dbConn.query('SELECT * FROM users', function (error, results, fields) {
