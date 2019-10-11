@@ -1,13 +1,12 @@
-module.exports = function(sequelize, DataTypes) {
-    return sequelize.define('User', {
-      first_name: DataTypes.STRING,
-      last_name: DataTypes.STRING,
-      admin: DataType.BOOLEAN,
-    }, {
-      instanceMethods: {
-        countTasks: function() {
-          // how to implement this method ?
-        }
-      }
-    });
+'use strict';
+module.exports = (sequelize, DataTypes) => {
+  var User = sequelize.define('User', {
+    username: DataTypes.STRING
+  });
+
+  User.associate = function(models) {
+    models.User.hasMany(models.Task);
   };
+
+  return User;
+};
