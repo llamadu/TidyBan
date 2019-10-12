@@ -3,24 +3,29 @@ var db = require("../models");
 module.exports = function(app) {
   app.get('/api/helpers', function (req, res) {
     // TODO: Use db.Helper.findAll() to add a task
-
+    db.Helper.findAll().then( (result) => res.json(result)
   });
 
   // Add a new user  
   app.post('/api/helper', function (req, res) {
     // TODO: Use db.Helper.create() to add a helper
-
+    db.Helper.create({
+      helper: req.body.helper,
+    }).then( (result) => res.json(result) )
 
   });
 
   app.get('/api/tasks', function (req, res) {
     // TODO: Use db.Tasks.findAll() to add a task
-
+    db.Tasks.findAll().then( (result) => res.json(result)
   });
 
   // Add a new user  
   app.post('/api/task', function (req, res) {
     // TODO: Use db.Task.create() to add a task
+    db.Task.create({
+      task: req.body.task,
+    }).then( (result) => res.json(result) )
 
   });
 
